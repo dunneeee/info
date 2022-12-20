@@ -449,12 +449,20 @@ button {
 }
 
 .love {
+  position: relative;
   overflow-x: hidden;
   overflow-y: scroll;
 }
 .love > * {
   padding: 20px;
   color: black;
+}
+.love__bg-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  opacity: 0.3;
 }
 .love::-webkit-scrollbar {
   width: 5px;
